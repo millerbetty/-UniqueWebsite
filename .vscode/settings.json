@@ -1,0 +1,5 @@
+{
+    "css.lint.unknownAtRules": "ignore",
+    "typescript.suggest.paths": true,
+    "javascript.suggest.paths": true 
+  }
