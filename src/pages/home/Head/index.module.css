@@ -1,0 +1,59 @@
+.btn {
+   
+    margin: auto;
+    border: 2px solid;
+    -o-border-image: linear-gradient(45deg, rgb(79, 122, 221), rgb(21, 99, 37)) 1;
+       border-image: linear-gradient(45deg, gold, deeppink) 1;
+    -webkit-clip-path: inset(0px round 2px);
+            clip-path: inset(0px round 2px);
+    -webkit-animation: huerotate 6s infinite linear;
+            animation: huerotate 6s infinite linear;
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+}
+
+@-webkit-keyframes huerotate {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+                filter: hue-rotate(0deg);
+    }
+    100% {
+        -webkit-filter: hue-rorate(360deg);
+                filter: hue-rorate(360deg);
+    }
+}
+
+@keyframes huerotate {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+                filter: hue-rotate(0deg);
+    }
+    100% {
+        -webkit-filter: hue-rorate(360deg);
+                filter: hue-rorate(360deg);
+    }
+}
+
+
+.clicked{
+    position: absolute;
+    top:0;
+    -webkit-animation: like 4s ease-in-out forwards;
+            animation: like 4s ease-in-out forwards;
+}
+@-webkit-keyframes like {
+    0%{
+        top:0;
+    }
+    100%{
+        top: -100%;
+    }
+}
+@keyframes like {
+    0%{
+        top:0;
+    }
+    100%{
+        top: -100%;
+    }
+}
