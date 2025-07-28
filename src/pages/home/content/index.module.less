@@ -3,34 +3,34 @@ background:
   linear-gradient(135deg, rgba(24, 72, 85, 0.8), rgba(74, 100, 98, 0) 70.71%),
   linear-gradient(45deg, rgba(15, 102, 80, 0.8), rgba(119, 98, 106, 0) 70.71%);
 
-&::before {
-    content: '';
-    position: absolute; 
-    top: -42%;
-    left: -50%;
+// &::before {
+//     content: '';
+//     position: absolute; 
+//     top: -42%;
+//     left: -50%;
 
-    width: 200%;
-    height: 200%;
-    border-radius: 50%;
-    z-index: 0;
-    mix-blend-mode: overlay;
-    -webkit-filter: blur(10px);
-            filter: blur(5px);
-    // border:1px solid transparent;
-    background:  radial-gradient(
+//     width: 200%;
+//     height: 200%;
+//     border-radius: 50%;
+//     z-index: 0;
+//     mix-blend-mode: overlay;
+//     -webkit-filter: blur(10px);
+//             filter: blur(5px);
+//     // border:1px solid transparent;
+//     background:  radial-gradient(
       
-      rgba(255, 255, 255, 0.5),
-      rgba(102, 55, 255, 0.2),
-      rgba(32, 165, 167, 0.5),
+//       rgba(255, 255, 255, 0.5),
+//       rgba(102, 55, 255, 0.2),
+//       rgba(32, 165, 167, 0.5),
 
-      rgba(163, 138, 160, 0.2)
+//       rgba(163, 138, 160, 0.2)
      
-    );
-    // transform: rotate(45deg);
+//     );
+//     // transform: rotate(45deg);
     
-    -webkit-animation: lightFlow 10s linear infinite;
-            animation: lightFlow 10s linear infinite;
-  }
+//     -webkit-animation: lightFlow 10s linear infinite;
+//             animation: lightFlow 10s linear infinite;
+//   }
 }
 
 @-webkit-keyframes lightFlow {
@@ -67,3 +67,11 @@ background:
     transform: rotate3d(0,1,0,180deg)
   }
 
+.editor{
+  :global{
+  .bytemd {
+    height: calc(100vh - 6rem);
+  }
+  }
+  
+}

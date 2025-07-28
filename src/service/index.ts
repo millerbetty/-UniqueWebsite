@@ -20,3 +20,14 @@ export const getWeather = async (city: string): Promise<IGetWeather> => {
   }
 }
 
+export const savePage = async (value: string) => {
+  try {
+    const res = await axios.post('/api/create', {
+      value
+    })
+    return Promise.resolve(res.data)
+  } catch (err) {
+    return Promise.reject(err)
+  }
+}
+
